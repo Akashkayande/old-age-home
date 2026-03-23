@@ -40,5 +40,3 @@ This project helps old age homes (Vrudhashram) solve real-world problems like:
 - **Database:** PostgreSQL  
 
 ---
-
-## 📁 Project Structure
