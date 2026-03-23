@@ -1,4 +1,4 @@
-const BASE_URL = "https://old-age-home-4avd.onrender.com/auth";
+const BASE_URL = "https://127.0.0.1:5000/auth";
 
 // Show/Hide Password
 function togglePassword(id) {
