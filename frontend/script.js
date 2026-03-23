@@ -34,7 +34,7 @@ function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    fetch("http://127.0.0.1:5000/auth/login", {
+    fetch(`${BASE_URL}/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -85,7 +85,7 @@ function logout() {
 let selectedNeed = null;
 
 // Load Needs
-fetch("http://127.0.0.1:5000/auth/get-needs")
+fetch(`${BASE_URL}/get-needs`)
     .then(res => res.json())
     .then(data => {
         let html = "";
@@ -117,7 +117,7 @@ function closeForm() {
 
 // Submit
 function submitDonation() {
-    fetch("http://127.0.0.1:5000/auth/donate", {
+    fetch(`${BASE_URL}/donate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -138,7 +138,7 @@ function submitDonation() {
 
 function submitVolunteer() {
 
-    fetch(`http://127.0.0.1:5000/auth/volunteer`, {
+    fetch(`${BASE_URL}/volunteer`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -165,7 +165,7 @@ function submitVolunteer() {
 function loadAdminData() {
 
     // LOAD NEEDS
-    fetch("http://127.0.0.1:5000/auth/get-needs")
+    fetch(`${BASE_URL}/get-needs`)
     .then(res => res.json())
     .then(data => {
 
