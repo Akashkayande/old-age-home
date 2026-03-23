@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a06118c2a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="nav-left">
+        <img src="../images/vrudhrashram.webp" class="logo">
+        <h2>Vrudhashram</h2>
+    </div>
+
+    <div class="nav-center">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="donation.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+    </div>
+
+    <div class="nav-right">
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+
+<div class="contact-hero">
+    <h1>Volunteer</h1>
+    <p>Vatsalya Old Age Home</p>
+    <span>Volunteer</span>
+</div>
+
+
+<div class="volunteer-section">
+
+
+    <div class="volunteer-image">
+        <img src="../images/volunteer.png" alt="Volunteers">
+    </div>
+
+    <div class="volunteer-form">
+
+        <h2>Register for being a Volunteer</h2>
+
+        <input id="vname" placeholder="Full Name">
+        <input id="vemail" placeholder="Email Address">
+        <input id="vphone" placeholder="Phone Number">
+
+        <select id="varea">
+            <option>Select an option</option>
+            <option>Care & Support</option>
+            <option>Medical Help</option>
+            <option>Events & Activities</option>
+            <option>Food Service</option>
+            <option>General Volunteer</option>
+        </select>
+
+        <button onclick="submitVolunteer()">Submit Request</button>
+
+    </div>
+
+</div>
+<div class="container">
+
+  <!-- Volunteer Coordinator Card -->
+  <div class="card coordinator-card">
+    <h3>Volunteer Coordinator</h3>
+    <div class="divider"></div>
+
+    <p class="name">Mr. Yogesh</p>
+    <p class="role">Volunteer Coordinator</p>
+
+    <p class="contact-title">For volunteer related queries, please contact:</p>
+
+    <div class="contact-box">
+      <p>📧 vatsalyavruddhashram@gmail.com</p>
+      <p>📞 +91 7387386333</p>
+    </div>
+  </div>
+
+  <!-- Daily Engagement Flow -->
+  <div class="card schedule-card">
+    <h3>Daily Engagement Flow</h3>
+
+    <div class="schedule">
+
+      <div class="row">
+        <div class="time">10:00 AM - 12:00 PM</div>
+        <div class="activity">
+          <strong>Morning Circle</strong>
+          <p>Warm introductions and mindfulness time with residents.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">10:30 AM - 12:00 PM</div>
+        <div class="activity">
+          <strong>Activity Session</strong>
+          <p>Storytelling, art therapy, or games — guided by volunteers.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">12:00 PM - 1:00 PM</div>
+        <div class="activity">
+          <strong>Lunch & Companion Time</strong>
+          <p>Help serve meals and share lunch with the residents.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">1:00 PM - 3:00 PM</div>
+        <div class="activity">
+          <strong>Support & Care Assistance</strong>
+          <p>Walks, tech help, reading, or wellness assistance as needed.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="time">3:00 PM - 4:00 PM</div>
+        <div class="activity">
+          <strong>Reflection & Feedback</strong>
+          <p>Group discussion with staff and other volunteers on experiences.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-message">
+            <h3>❤️ Caring Beyond Age</h3>
+            <p>
+                Together, we can bring smiles, love,<br/>
+                 and dignity to every elder.
+            </p>
+        </div>
+
+
+        <div class="footer-contact">
+            <p>📍 Nashik District, Maharashtra</p>
+            <p>📞 +91 9876543210</p>
+            <p>📧 support@vrudhashram.com</p>
+        </div>
+
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© Copyright 2026 Vrudhashram • All Rights Reserved</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+<script>
+    checkAuth();
+</script>
+
+</body>
+</html>

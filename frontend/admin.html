@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="admin-navbar">
+
+    <div class="admin-left">
+        <h2>🏡 Vrudhashram Admin</h2>
+    </div>
+
+    <div class="admin-right">
+        <span>👨‍💼 Admin</span>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+</div>
+
+<div class="admin-container">
+
+    <h1 class="dashboard-title">📊 Dashboard Overview</h1>
+    <div class="stats">
+
+        <div class="stat-card blue">
+            <h2 id="totalNeeds">0</h2>
+            <p>📦 Needs</p>
+        </div>
+
+        <div class="stat-card green">
+            <h2 id="totalDonations">0</h2>
+            <p>💝 Donations</p>
+        </div>
+
+        <div class="stat-card orange">
+            <h2 id="totalVolunteers">0</h2>
+            <p>🙋 Volunteers</p>
+        </div>
+
+    </div>
+    <div class="card-box">
+        <h2>➕ Add New Requirement</h2>
+
+        <div class="form-row">
+            <input id="item" placeholder="Item">
+            <input id="quantity" placeholder="Quantity">
+            <input id="desc" placeholder="Description">
+            <button onclick="addNeed()">Add</button>
+        </div>
+    </div>
+
+    <div class="card-box">
+        <h2>📋 Needs List</h2>
+        <div id="needsList" class="admin-grid"></div>
+    </div>
+
+    <div class="card-box">
+        <h2>💝 Donations</h2>
+        <div id="donationsList" class="admin-grid"></div>
+    </div>
+
+    <div class="card-box">
+        <h2>🙋 Volunteers</h2>
+        <div id="volunteersList" class="admin-grid"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>
+    checkAdmin();
+    loadAdminData();
+</script>
+
+</body>
+</html>

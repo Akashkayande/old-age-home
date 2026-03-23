@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0a06118c2a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="nav-left">
+        <img src="../images/vrudhrashram.webp" class="logo">
+        <h2>Vrudhashram</h2>
+    </div>
+
+    <div class="nav-center">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="donation.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+    </div>
+
+    <div class="nav-right">
+        <button onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="donation-hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>💝 Give Hope. Share Love.</h1>
+
+        <p>
+            Your small contribution can bring comfort, care,
+            and happiness to elderly lives who need it the most.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#needs" class="btn-primary">Donate Now</a>
+            <a href="volunteer.html" class="btn-secondary">Become Volunteer</a>
+        </div>
+    </div>
+
+</div>
+
+<div  class="donation-info">
+
+    <div class="info-box">
+        <h3>🤝 Why Support Us?</h3>
+        <p>
+            Many elders depend on us for daily needs like food,
+            medicines, and care. Your support helps us provide
+            them a better life.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>📦 How You Can Help?</h3>
+        <p>
+            You can donate food, clothes, medicines, or any essential
+            items needed by our residents.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h3>❤️ Your Impact</h3>
+        <p>
+            Every donation brings happiness, care, and dignity
+            to our elders.
+        </p>
+    </div>
+
+</div>
+
+<div class="needs-section">
+
+    <h2>💝 Support What Matters</h2>
+
+    <p class="needs-subtext">
+        Your small contribution can make a big difference in the lives of our elders.
+        Choose a need below and help us bring comfort and care ❤️
+    </p>
+
+    <div id="needsList" class="needs-grid"></div>
+
+</div>
+<div id="donationModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="closeForm()">×</span>
+
+        <h2>💝 Make a Donation</h2>
+
+        <input id="name" placeholder="Your Name">
+        <input id="email" placeholder="Email">
+        <input id="phone" placeholder="Phone">
+        <input id="item" placeholder="What you donate">
+        <textarea id="message" placeholder="Message"></textarea>
+
+        <button class="submit-btn" onclick="submitDonation()">Submit Donation</button>
+    </div>
+</div>
+
+<div class="qr-donation">
+
+    <h2>💰 Support Us Financially</h2>
+
+    <p class="qr-subtext">
+        If you prefer to donate money, you can easily support us using UPI.
+        Your contribution helps us provide food, medicine, and care to our elders ❤️
+    </p>
+
+    <div class="qr-container">
+
+        <!-- QR IMAGE -->
+        <div class="qr-box">
+            <img src="../images/QRCode.png" alt="UPI QR Code">
+        </div>
+        <div class="qr-details">
+            <h3>📱 Scan & Pay</h3>
+
+            <p><strong>UPI ID:</strong> vrudhashram@upi</p>
+            <p><strong>Name:</strong> Vrudhashram Foundation</p>
+
+            <ul>
+                <li>✔ Open any UPI app (GPay, PhonePe, Paytm)</li>
+                <li>✔ Scan the QR code</li>
+                <li>✔ Enter amount & pay</li>
+            </ul>
+
+            <p class="thank-you">🙏 Thank you for your support!</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="cta-section">
+
+    <!-- Left -->
+    <div class="cta-box left">
+        <div class="cta-icon">🏢</div>
+        <h2>Visit Our Ashram</h2>
+        <a href="contact.html" class="cta-btn dark">LET'S GO</a>
+    </div>
+
+    <!-- Right -->
+    <div class="cta-box right">
+        <div class="cta-icon">✅</div>
+        <h2>Ready to Volunteer?</h2>
+        <a href="volunteer.html" class="cta-btn green">REGISTER</a>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+        <div class="footer-message">
+            <h3>❤️ Caring Beyond Age</h3>
+            <p>
+                Together, we can bring smiles, love,<br/>
+                 and dignity to every elder.
+            </p>
+        </div>
+
+        <div class="footer-contact">
+            <p>📍 Nashik District, Maharashtra</p>
+            <p>📞 +91 9876543210</p>
+            <p>📧 support@vrudhashram.com</p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2026 Vrudhashram • All Rights Reserved</p>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+<script>
+    checkAuth();
+</script>
+
+
+</body>
+</html>
